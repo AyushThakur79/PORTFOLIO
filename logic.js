@@ -119,21 +119,6 @@ reach.addEventListener("mouseleave", function () {
 	crsr.style.transition = "all 0.2s ease";
 });
 
-// For Menu
-menu.addEventListener("mouseenter", function () {
-	crsr.style.height = "107px";
-	crsr.style.width = "107px";
-	crsr.style.borderRadius = "50%";
-	crsr.style.transition = "all 0.2s ease";
-});
-
-menu.addEventListener("mouseleave", function () {
-	crsr.style.height = "7px";
-	crsr.style.width = "7px";
-	crsr.style.borderRadius = "50%";
-	crsr.style.transition = "all 0.2s ease";
-});
-
 // Navigate
 const aboutLink = document.querySelector('h2 > a[href="#about"]');
 const workLink = document.querySelector('h2 > a[href="#work"]');
