@@ -259,6 +259,34 @@ main {
 	font-family: "Helvetica", sans-serif;
 }
 
+.left h4:nth-child(2)::after {
+	content: "";
+	background: #e5e4e3;
+	height: 0.1vw;
+	width: 0%;
+	display: block;
+	margin: auto;
+	transition: all 0.4s ease;
+}
+
+.left h4:nth-child(2):hover::after {
+	width: 97%;
+}
+
+.left h4:nth-child(3)::after {
+	content: "";
+	background: #e5e4e3;
+	height: 0.1vw;
+	width: 0%;
+	display: block;
+	margin: auto;
+	transition: all 0.4s ease;
+}
+
+.left h4:nth-child(3):hover::after {
+	width: 97%;
+}
+
 .right {
 	display: flex;
 	justify-content: center;
