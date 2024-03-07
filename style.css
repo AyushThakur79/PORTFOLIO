@@ -942,7 +942,7 @@ main {
 	white-space: nowrap;
 	display: inline-block;
 	animation-name: move;
-	animation-duration: 31s;
+	animation-duration: 21s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }

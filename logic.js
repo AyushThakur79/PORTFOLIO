@@ -148,3 +148,13 @@ topScrollLink.addEventListener("click", function (event) {
 	event.preventDefault();
 	scroll.scrollTo("top");
 });
+
+// Alert
+
+function submitForm(event) {
+	event.preventDefault();
+
+	setTimeout(function () {
+		alert("Thank you for your submission!");
+	}, 1000);
+}
