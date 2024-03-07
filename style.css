@@ -55,6 +55,10 @@ body {
 	text-rendering: optimizeSpeed;
 }
 
+a {
+	cursor: none;
+}
+
 main {
 	background-color: #e4e1d9;
 }
@@ -552,6 +556,10 @@ main {
 	background-color: #17191b;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#about {
+	cursor: none;
 }
 
 /* text1 */
