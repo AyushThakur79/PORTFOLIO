@@ -1835,6 +1835,11 @@ html::-webkit-scrollbar-thumb {
 		width: 4.7vh;
 	}
 
+	.tech-icons img:nth-child(1) {
+		height: 4.8vh;
+		width: 4.8vh;
+	}
+
 	.circle-icon {
 		height: 3.3vw;
 		width: 100%;
@@ -2485,7 +2490,7 @@ html::-webkit-scrollbar-thumb {
 	/* footer real */
 
 	.footer-mobile {
-		height: 63vh;
+		height: 45vh;
 		width: 99%;
 		background-color: #17191b;
 		margin-left: 0.5vw;
@@ -2511,23 +2516,23 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.mail-input-mobile input::placeholder {
-		font-size: 2.9vw;
+		font-size: 3vw;
 	}
 
 	.mail-input-mobile .submit-mobile {
-		width: 19vw;
-		margin-left: 3.3vw;
+		width: 7vw;
+		margin-left: 15.5vw;
 		background-color: #17191b;
 		outline: none;
 		border: none;
-		font-size: 3.7vw;
+		font-size: 2.7vw;
 	}
 
 	.line-footer-mobile {
 		height: 0.1vw;
-		width: 86vw;
+		width: 91.5vw;
 		color: #e5e4e3;
-		margin-left: 5vw;
+		margin-left: 3vw;
 		background-color: #e5e4e3;
 	}
 
@@ -2537,8 +2542,8 @@ html::-webkit-scrollbar-thumb {
 		background-color: #17191b;
 		border: #17191b;
 		outline: none;
-		margin-left: 5vw;
-		font-size: 1vw;
+		margin-left: 3vw;
+		font-size: 3vw;
 		/* background-color: red; */
 		/* border-bottom: 1px solid #e5e4e3cf; */
 	}
@@ -2578,5 +2583,64 @@ html::-webkit-scrollbar-thumb {
 		font-weight: 100;
 		font-size: 19vw;
 		margin-left: 1.5vw;
+	}
+
+	.end-content-mobile1 {
+		display: flex;
+		justify-content: space-between;
+		padding: 5vw 2vw;
+	}
+
+	.head-mobile {
+		font-size: 3vw;
+		font-family: darkF;
+		color: #999999;
+	}
+
+	.sub-head-mobile {
+		font-family: newF;
+		font-size: 3.6vw;
+	}
+
+	.version-mobile {
+		padding-left: 2vw;
+	}
+
+	.end-content-mobile2 {
+		display: flex;
+		gap: 20.3vw;
+		padding: 5vw 4vw;
+	}
+
+	.socials-end-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.head-mobile-social {
+		display: flex;
+		gap: 4vw;
+	}
+
+	.line-mobile {
+		height: 0.1vw;
+		width: 93%;
+		background-color: #e4e1d9;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bottom-end-mobile {
+		font-family: nb;
+		font-size: 2.7vw;
+		padding-left: 3.7vw;
+		padding-top: 1vw;
+		display: flex;
+		justify-content: space-between;
+		padding-right: 3vw;
+	}
+
+	.bottom-end-mobile p {
+		padding-top: 1vw;
 	}
 }
