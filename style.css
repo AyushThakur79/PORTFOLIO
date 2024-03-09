@@ -63,10 +63,6 @@ main {
 	background-color: #e4e1d9;
 }
 
-.cursor {
-	display: none;
-}
-
 .loader {
 	height: 100%;
 	width: 100%;
@@ -648,6 +644,11 @@ main {
 	gap: 2.3vw;
 }
 
+.tech-icons img {
+	height: 9vw;
+	width: 9vw;
+}
+
 .circle-icon {
 	height: 8.1%;
 	width: 100%;
@@ -947,6 +948,12 @@ main {
 	padding-right: 1vw;
 }
 
+.flower img {
+	height: 4vw;
+	width: 4vw;
+	animation: moving-icon 2s linear infinite;
+}
+
 /* Scroller 3  */
 
 /* scroller2 */
@@ -989,6 +996,7 @@ main {
 	height: 1.1;
 	width: 1.1vw;
 	gap: 31vw;
+	animation: moving-icon 2s infinite linear;
 }
 
 @keyframes move {
@@ -1564,9 +1572,6 @@ html::-webkit-scrollbar-thumb {
 	.page1 h1 span:nth-child(2) {
 		font-size: 15.9vw;
 	}
-	.page1 span img:nth-child(1) {
-		display: none;
-	}
 
 	.page1 span img:nth-child(2) {
 		display: inline;
@@ -1685,8 +1690,8 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.con2 span img {
-		height: 1.5vw;
-		width: 1.5vw;
+		height: 4.5vw;
+		width: 4.5vw;
 	}
 
 	@keyframes move {
@@ -1713,6 +1718,10 @@ html::-webkit-scrollbar-thumb {
 		height: 100%;
 		width: 99%;
 		object-fit: cover;
+	}
+
+	.page1 span img {
+		display: none;
 	}
 
 	/* Page 2 */
@@ -2198,7 +2207,7 @@ html::-webkit-scrollbar-thumb {
 	/* Page 4 (Footer) */
 
 	.footer {
-		height: 51vw;
+		height: 100vw;
 		width: 99%;
 		background-color: #17191b;
 		margin-left: 0.5vw;
@@ -2206,7 +2215,6 @@ html::-webkit-scrollbar-thumb {
 		display: flex;
 		flex-direction: column;
 		color: #e5e4e3;
-		margin-top: 21vw;
 	}
 
 	.text-content4 {
@@ -2246,132 +2254,6 @@ html::-webkit-scrollbar-thumb {
 		margin-left: 1.5vw;
 	}
 
-	.footer .footer-end {
-		height: 5vw;
-		width: 99%;
-		margin-left: auto;
-		margin-right: auto;
-		/* background-color: red; */
-		display: flex;
-		justify-content: space-between;
-		padding: 1vw 2vw;
-		margin-top: 2.1vw;
-		margin-bottom: 0.5vw;
-	}
-
-	.left-side-part {
-		height: 100%;
-		width: 40%;
-		/* background-color: blue; */
-		display: flex;
-		gap: 3vw;
-		line-height: 1.5vw;
-	}
-
-	.left-side-part .sub-head {
-		font-family: newF;
-	}
-
-	.center {
-		font-family: newF;
-		color: #e5e4e3;
-		margin-top: 1.5vw;
-		opacity: 0.4;
-		transition: all ease 0.4s;
-	}
-
-	.center:hover {
-		opacity: 1;
-	}
-
-	.right-side-part {
-		height: 100%;
-		width: 40%;
-		/* background-color: blue; */
-		display: flex;
-		justify-content: flex-end;
-		gap: 3vw;
-		line-height: 1.5vw;
-	}
-
-	.right-side-part a {
-		text-decoration: none;
-		color: #e5e4e3;
-	}
-
-	.footer-end .head {
-		font-size: 0.9vw;
-		font-family: darkF;
-	}
-
-	.github,
-	.insta {
-		padding-top: 1.5vw;
-	}
-
-	/* Linkedin */
-
-	.linkedin h5 a::after {
-		content: "";
-		background: #e5e4e3;
-		height: 0.1vw;
-		width: 0%;
-		display: block;
-		margin: auto;
-		transition: all 0.4s ease;
-	}
-
-	.linkedin h5 a:hover::after {
-		width: 95%;
-	}
-
-	/* Github */
-
-	.github h5 a::after {
-		content: "";
-		background: #e5e4e3;
-		height: 0.1vw;
-		width: 0%;
-		display: block;
-		margin: auto;
-		transition: all 0.4s ease;
-	}
-
-	.github h5 a:hover::after {
-		width: 95%;
-	}
-
-	/* Instagram */
-
-	.insta h5 a::after {
-		content: "";
-		background: #e5e4e3;
-		height: 0.1vw;
-		width: 0%;
-		display: block;
-		margin: auto;
-		transition: all 0.4s ease;
-	}
-
-	.insta h5 a:hover::after {
-		width: 95%;
-	}
-
-	.right-side-part .sub-head {
-		font-size: 1vw;
-		font-family: newF;
-		font-weight: 400;
-		opacity: 0.4;
-		transition: all ease 0.4s;
-	}
-
-	.right-side-part .sub-head:hover {
-		font-size: 1vw;
-		font-family: newF;
-		font-weight: 400;
-		opacity: 1;
-	}
-
 	.contacts {
 		display: flex;
 		justify-content: space-between;
@@ -2400,21 +2282,21 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.mail-input input::placeholder {
-		font-size: 0.9vw;
+		font-size: 1.9vw;
 	}
 
 	.mail-input .submit {
-		width: 2vw;
+		width: 5vw;
 		margin-left: 2.5vw;
 		background-color: #17191b;
 		outline: none;
 		border: none;
-		font-size: 1vw;
+		font-size: 3vw;
 	}
 
 	.line-footer {
 		height: 1px;
-		width: 18vw;
+		width: 32vw;
 		color: #e5e4e3;
 		margin-left: 5vw;
 		background-color: #e5e4e3;
@@ -2422,7 +2304,7 @@ html::-webkit-scrollbar-thumb {
 
 	.mail-input .first-input {
 		height: 2vw;
-		width: 14vw;
+		width: 24vw;
 		background-color: #17191b;
 		border: #17191b;
 		outline: none;
@@ -2434,7 +2316,7 @@ html::-webkit-scrollbar-thumb {
 
 	.contact p {
 		font-family: darkF;
-		font-size: 0.9vw;
+		font-size: 4.3vw;
 	}
 
 	.contact a {
@@ -2443,7 +2325,7 @@ html::-webkit-scrollbar-thumb {
 
 	.contact .call,
 	.email {
-		font-size: 1vw;
+		font-size: 3.1vw;
 		font-family: newF;
 		font-weight: 400;
 	}
@@ -2452,5 +2334,21 @@ html::-webkit-scrollbar-thumb {
 	a {
 		color: #e5e4e3;
 		text-decoration: none;
+	}
+
+	.footer-end {
+		display: none;
+	}
+
+	.left-side-part {
+		display: none;
+	}
+
+	.center {
+		display: none;
+	}
+
+	.right-side-part {
+		display: none;
 	}
 }

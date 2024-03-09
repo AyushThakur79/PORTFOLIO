@@ -91,8 +91,8 @@ var reach = document.querySelector(".text-content4");
 
 // For Whole About Section
 about.addEventListener("mouseenter", function () {
-	crsr.style.height = "67px";
-	crsr.style.width = "67px";
+	crsr.style.height = "97px";
+	crsr.style.width = "97px";
 	crsr.style.borderRadius = "50%";
 	crsr.style.transition = "all 0.2s ease";
 });
