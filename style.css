@@ -1629,6 +1629,7 @@ html::-webkit-scrollbar-thumb {
 		margin-left: 69%;
 		justify-content: center;
 		align-items: center;
+		padding-top: 1vw;
 		/* background-color: red; */
 	}
 
