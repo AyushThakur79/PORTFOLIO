@@ -555,7 +555,7 @@ main {
 /* Page 2 */
 
 .page2 {
-	height: 77vw;
+	height: 83vw;
 	width: 99%;
 	background-color: #17191b;
 	margin-left: auto;
@@ -574,7 +574,7 @@ main {
 	font-family: nb;
 	color: #e5e4e3;
 	padding: 0vw 2vw;
-	padding-top: 2vw;
+	padding-top: 5vw;
 }
 
 .text1 h4 {
@@ -645,8 +645,13 @@ main {
 }
 
 .tech-icons img {
-	height: 9vw;
-	width: 9vw;
+	height: 8vw;
+	width: 8vw;
+}
+
+.tech-icons img:nth-child(1) {
+	height: 8.1vw;
+	width: 8.1vw;
 }
 
 .circle-icon {
@@ -767,7 +772,7 @@ main {
 
 .third-phase {
 	font-family: nb;
-	width: 81%;
+	width: 87%;
 	margin-top: 15vw;
 	font-size: 1.5vw;
 	padding-left: 1.3vw;
@@ -1284,6 +1289,11 @@ a {
 	color: #e5e4e3;
 	text-decoration: none;
 }
+
+.footer-mobile {
+	display: none;
+}
+
 /* end - Miscellaneous*/
 
 .seperate {
@@ -2211,7 +2221,7 @@ html::-webkit-scrollbar-thumb {
 	/* Page 4 (Footer) */
 
 	.footer {
-		height: 100vw;
+		height: 51vw;
 		width: 99%;
 		background-color: #17191b;
 		margin-left: 0.5vw;
@@ -2219,6 +2229,7 @@ html::-webkit-scrollbar-thumb {
 		display: flex;
 		flex-direction: column;
 		color: #e5e4e3;
+		margin-top: 21vw;
 	}
 
 	.text-content4 {
@@ -2258,6 +2269,132 @@ html::-webkit-scrollbar-thumb {
 		margin-left: 1.5vw;
 	}
 
+	.footer .footer-end {
+		height: 5vw;
+		width: 99%;
+		margin-left: auto;
+		margin-right: auto;
+		/* background-color: red; */
+		display: flex;
+		justify-content: space-between;
+		padding: 1vw 2vw;
+		margin-top: 2.1vw;
+		margin-bottom: 0.5vw;
+	}
+
+	.left-side-part {
+		height: 100%;
+		width: 40%;
+		/* background-color: blue; */
+		display: flex;
+		gap: 3vw;
+		line-height: 1.5vw;
+	}
+
+	.left-side-part .sub-head {
+		font-family: newF;
+	}
+
+	.center {
+		font-family: newF;
+		color: #e5e4e3;
+		margin-top: 1.5vw;
+		opacity: 0.4;
+		transition: all ease 0.4s;
+	}
+
+	.center:hover {
+		opacity: 1;
+	}
+
+	.right-side-part {
+		height: 100%;
+		width: 40%;
+		/* background-color: blue; */
+		display: flex;
+		justify-content: flex-end;
+		gap: 3vw;
+		line-height: 1.5vw;
+	}
+
+	.right-side-part a {
+		text-decoration: none;
+		color: #e5e4e3;
+	}
+
+	.footer-end .head {
+		font-size: 0.9vw;
+		font-family: darkF;
+	}
+
+	.github,
+	.insta {
+		padding-top: 1.5vw;
+	}
+
+	/* Linkedin */
+
+	.linkedin h5 a::after {
+		content: "";
+		background: #e5e4e3;
+		height: 0.1vw;
+		width: 0%;
+		display: block;
+		margin: auto;
+		transition: all 0.4s ease;
+	}
+
+	.linkedin h5 a:hover::after {
+		width: 95%;
+	}
+
+	/* Github */
+
+	.github h5 a::after {
+		content: "";
+		background: #e5e4e3;
+		height: 0.1vw;
+		width: 0%;
+		display: block;
+		margin: auto;
+		transition: all 0.4s ease;
+	}
+
+	.github h5 a:hover::after {
+		width: 95%;
+	}
+
+	/* Instagram */
+
+	.insta h5 a::after {
+		content: "";
+		background: #e5e4e3;
+		height: 0.1vw;
+		width: 0%;
+		display: block;
+		margin: auto;
+		transition: all 0.4s ease;
+	}
+
+	.insta h5 a:hover::after {
+		width: 95%;
+	}
+
+	.right-side-part .sub-head {
+		font-size: 1vw;
+		font-family: newF;
+		font-weight: 400;
+		opacity: 0.4;
+		transition: all ease 0.4s;
+	}
+
+	.right-side-part .sub-head:hover {
+		font-size: 1vw;
+		font-family: newF;
+		font-weight: 400;
+		opacity: 1;
+	}
+
 	.contacts {
 		display: flex;
 		justify-content: space-between;
@@ -2286,21 +2423,21 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.mail-input input::placeholder {
-		font-size: 2.3vw;
+		font-size: 0.9vw;
 	}
 
 	.mail-input .submit {
-		width: 5vw;
+		width: 2vw;
 		margin-left: 2.5vw;
 		background-color: #17191b;
 		outline: none;
 		border: none;
-		font-size: 3vw;
+		font-size: 1vw;
 	}
 
 	.line-footer {
 		height: 1px;
-		width: 37.7vw;
+		width: 18vw;
 		color: #e5e4e3;
 		margin-left: 5vw;
 		background-color: #e5e4e3;
@@ -2308,20 +2445,19 @@ html::-webkit-scrollbar-thumb {
 
 	.mail-input .first-input {
 		height: 2vw;
-		width: 30vw;
+		width: 14vw;
 		background-color: #17191b;
 		border: #17191b;
 		outline: none;
 		margin-left: 5vw;
-		font-size: 2.5vw;
+		font-size: 1vw;
 		/* background-color: red; */
 		/* border-bottom: 1px solid #e5e4e3cf; */
 	}
 
-	.contact p:nth-child(1) {
+	.contact p {
 		font-family: darkF;
-		font-size: 4.3vw;
-		color: #999999;
+		font-size: 0.9vw;
 	}
 
 	.contact a {
@@ -2330,7 +2466,7 @@ html::-webkit-scrollbar-thumb {
 
 	.contact .call,
 	.email {
-		font-size: 3.1vw;
+		font-size: 1vw;
 		font-family: newF;
 		font-weight: 400;
 	}
@@ -2340,20 +2476,107 @@ html::-webkit-scrollbar-thumb {
 		color: #e5e4e3;
 		text-decoration: none;
 	}
+	/* Page 4 (Footer) */
 
-	.footer-end {
+	.footer {
 		display: none;
 	}
 
-	.left-side-part {
-		display: none;
+	/* footer real */
+
+	.footer-mobile {
+		height: 63vh;
+		width: 99%;
+		background-color: #17191b;
+		margin-left: 0.5vw;
+		margin-right: auto;
+		display: flex;
+		flex-direction: column;
+		color: #e5e4e3;
 	}
 
-	.center {
-		display: none;
+	.mail-input-mobile {
+		padding: 6vw 0.3vw;
+		position: relative;
 	}
 
-	.right-side-part {
-		display: none;
+	.mail-input-mobile label {
+		color: #e5e4e3;
+		position: absolute;
+		right: 3vw;
+	}
+
+	.mail-input-mobile input {
+		color: #e5e4e3;
+	}
+
+	.mail-input-mobile input::placeholder {
+		font-size: 2.9vw;
+	}
+
+	.mail-input-mobile .submit-mobile {
+		width: 19vw;
+		margin-left: 3.3vw;
+		background-color: #17191b;
+		outline: none;
+		border: none;
+		font-size: 3.7vw;
+	}
+
+	.line-footer-mobile {
+		height: 0.1vw;
+		width: 86vw;
+		color: #e5e4e3;
+		margin-left: 5vw;
+		background-color: #e5e4e3;
+	}
+
+	.mail-input-mobile .first-input-mobile {
+		height: 7vw;
+		width: 70vw;
+		background-color: #17191b;
+		border: #17191b;
+		outline: none;
+		margin-left: 5vw;
+		font-size: 1vw;
+		/* background-color: red; */
+		/* border-bottom: 1px solid #e5e4e3cf; */
+	}
+
+	.text-content4-mobile {
+		padding: 1vw 2vw;
+		display: flex;
+		justify-content: center;
+	}
+
+	.text-content4-mobile h1 {
+		color: #e5e4e3;
+		font-family: darkF;
+		font-size: 22vw;
+	}
+
+	.text-content4-mobile h1::after {
+		content: "";
+		background: #e5e4e3;
+		height: 0.1vw;
+		width: 0%;
+		display: block;
+		margin: auto;
+		transition: all 0.4s ease;
+	}
+
+	.text-content4-mobile h1:hover::after {
+		width: 100%;
+	}
+
+	.text-content4-mobile h1 span {
+		display: inline-block;
+	}
+
+	.text-content4-mobile .second4-mobile {
+		font-family: editF;
+		font-weight: 100;
+		font-size: 19vw;
+		margin-left: 1.5vw;
 	}
 }
