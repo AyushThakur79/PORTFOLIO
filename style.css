@@ -1653,8 +1653,6 @@ html::-webkit-scrollbar-thumb {
 		font-weight: bold;
 	}
 
-	/* scroller2 */
-
 	.scroller2 {
 		line-height: 8.2vw;
 	}
@@ -1679,19 +1677,23 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.con2 h1 {
-		font-size: 10vw;
+		font-size: 12vw;
 		display: inline-block;
 		font-family: nuckle;
 		font-weight: bold;
 		color: #17191b;
 		/* letter-spacing: -1px; */
 		padding-top: 5vw;
-		height: 6vh;
+		height: 6vw;
 	}
 
 	.con2 span img {
-		height: 4.5vw;
-		width: 4.5vw;
+		height: 6.5vw;
+		width: 6.5vw;
+	}
+
+	.con2 span {
+		padding-right: 1vw;
 	}
 
 	@keyframes move {
@@ -1718,10 +1720,6 @@ html::-webkit-scrollbar-thumb {
 		height: 100%;
 		width: 99%;
 		object-fit: cover;
-	}
-
-	.page1 span img {
-		display: none;
 	}
 
 	/* Page 2 */
