@@ -129,18 +129,21 @@ const topScrollLink = document.querySelector("#topScroll");
 aboutLink.addEventListener("click", function (event) {
 	event.preventDefault();
 	scroll.scrollTo("#about");
+	menu.style.right = "-100%";
 });
 
 // Scroll to the Work section
 workLink.addEventListener("click", function (event) {
 	event.preventDefault();
 	scroll.scrollTo("#work");
+	menu.style.right = "-100%";
 });
 
 // Scroll to the Work section
 reachout.addEventListener("click", function (event) {
 	event.preventDefault();
 	scroll.scrollTo("#reach");
+	menu.style.right = "-100%";
 });
 
 // Scroll to the Top
