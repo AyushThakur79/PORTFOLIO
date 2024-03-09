@@ -1582,6 +1582,10 @@ html::-webkit-scrollbar-thumb {
 		padding-bottom: 0.5vh;
 	}
 
+	.page1 span #remove {
+		display: none;
+	}
+
 	/* scroller */
 
 	.scroller {
