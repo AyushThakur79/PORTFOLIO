@@ -1729,7 +1729,7 @@ html::-webkit-scrollbar-thumb {
 	/* Page 2 */
 
 	.page2 {
-		height: 113vw;
+		height: 116vw;
 		width: 99%;
 		background-color: #17191b;
 		margin-left: auto;
@@ -1748,7 +1748,7 @@ html::-webkit-scrollbar-thumb {
 		font-family: nb;
 		color: #e5e4e3;
 		padding: 0vw 2vw;
-		padding-top: 2vw;
+		padding-top: 6vw;
 	}
 
 	.text1 h4 {
@@ -2284,7 +2284,7 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.mail-input input::placeholder {
-		font-size: 1.9vw;
+		font-size: 2.3vw;
 	}
 
 	.mail-input .submit {
@@ -2298,7 +2298,7 @@ html::-webkit-scrollbar-thumb {
 
 	.line-footer {
 		height: 1px;
-		width: 32vw;
+		width: 37.7vw;
 		color: #e5e4e3;
 		margin-left: 5vw;
 		background-color: #e5e4e3;
@@ -2306,19 +2306,20 @@ html::-webkit-scrollbar-thumb {
 
 	.mail-input .first-input {
 		height: 2vw;
-		width: 24vw;
+		width: 30vw;
 		background-color: #17191b;
 		border: #17191b;
 		outline: none;
 		margin-left: 5vw;
-		font-size: 1vw;
+		font-size: 2.1vw;
 		/* background-color: red; */
 		/* border-bottom: 1px solid #e5e4e3cf; */
 	}
 
-	.contact p {
+	.contact p:nth-child(1) {
 		font-family: darkF;
 		font-size: 4.3vw;
+		color: #999999;
 	}
 
 	.contact a {
