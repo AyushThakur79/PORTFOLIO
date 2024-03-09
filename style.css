@@ -1888,6 +1888,7 @@ html::-webkit-scrollbar-thumb {
 	.left-side {
 		height: 20%;
 		width: 100%;
+		padding-right: 1vw;
 		/* background-color: red; */
 	}
 
