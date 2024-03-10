@@ -1745,6 +1745,7 @@ html::-webkit-scrollbar-thumb {
 		background-color: #17191b;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 11vw;
 	}
 
 	#about {
@@ -2490,7 +2491,7 @@ html::-webkit-scrollbar-thumb {
 	/* footer real */
 
 	.footer-mobile {
-		height: 45vh;
+		height: 47vh;
 		width: 99%;
 		background-color: #17191b;
 		margin-left: 0.5vw;
@@ -2498,6 +2499,7 @@ html::-webkit-scrollbar-thumb {
 		display: flex;
 		flex-direction: column;
 		color: #e5e4e3;
+		margin-top: 11vw;
 	}
 
 	.mail-input-mobile {
