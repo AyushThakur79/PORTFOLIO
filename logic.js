@@ -26,48 +26,6 @@ setTimeout(function () {
 	loader.style.top = "-100%";
 }, 3000);
 
-// time - Desktop
-function updateTime() {
-	fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
-		.then((response) => response.json())
-		.then((data) => {
-			var dateTime = new Date(data.datetime);
-			var hours = dateTime.getHours();
-			var minutes = dateTime.getMinutes();
-			var ampm = hours >= 12 ? "PM" : "AM";
-			hours = hours % 12;
-			hours = hours ? hours : 12; // handle midnight
-			minutes = minutes < 10 ? "0" + minutes : minutes;
-			var timeString = hours + ":" + minutes + " " + ampm + " GMT+1";
-			document.getElementById("time").textContent = timeString;
-		})
-		.catch((error) => console.error("Error fetching time:", error));
-}
-
-updateTime();
-setInterval(updateTime, 60000);
-
-// time - Mobile
-function updateTime() {
-	fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata")
-		.then((response) => response.json())
-		.then((data) => {
-			var dateTime = new Date(data.datetime);
-			var hours = dateTime.getHours();
-			var minutes = dateTime.getMinutes();
-			var ampm = hours >= 12 ? "PM" : "AM";
-			hours = hours % 12;
-			hours = hours ? hours : 12; // handle midnight
-			minutes = minutes < 10 ? "0" + minutes : minutes;
-			var timeString = hours + ":" + minutes + " " + ampm + " GMT+1";
-			document.getElementById("time2").textContent = timeString;
-		})
-		.catch((error) => console.error("Error fetching time:", error));
-}
-
-updateTime();
-setInterval(updateTime, 60000);
-
 // menu
 let menuBtn = document.querySelector(".right");
 let menu = document.querySelector(".menu");
