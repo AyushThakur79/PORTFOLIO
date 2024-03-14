@@ -579,6 +579,7 @@ main {
 
 .text1 h4 {
 	font-size: 2.3vw;
+	color: #b6b6b6;
 }
 
 .text1 h3 {
@@ -613,6 +614,7 @@ main {
 
 .text2 h4 {
 	font-size: 2.3vw;
+	color: #b6b6b6;
 }
 
 .text2 h3 {
@@ -1766,6 +1768,7 @@ html::-webkit-scrollbar-thumb {
 	.text1 h4 {
 		font-size: 4.3vw;
 		margin-top: 0.5vh;
+		color: #b6b6b6;
 	}
 
 	.text1 h3 {
@@ -1802,6 +1805,7 @@ html::-webkit-scrollbar-thumb {
 	.text2 h4 {
 		font-size: 4.3vw;
 		margin-top: 0.5vh;
+		color: #b6b6b6;
 	}
 
 	.text2 h3 {
