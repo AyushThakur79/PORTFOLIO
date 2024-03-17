@@ -1382,7 +1382,7 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.cursor {
-		display: none;
+		display: none !important;
 	}
 	/* loader ends */
 
