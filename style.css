@@ -61,6 +61,8 @@ a {
 
 main {
 	background-color: #e4e1d9;
+	position: relative;
+	z-index: 10;
 }
 
 .loader {
@@ -308,7 +310,7 @@ main {
 .right .line1 {
 	height: 0.1vw;
 	width: 3.7vw;
-	position: fixed;
+	position: absolute;
 	margin-right: 3vw;
 	background-color: #e5e4e3;
 	border-radius: 2px;
@@ -320,7 +322,7 @@ main {
 	height: 0.1vw;
 	width: 3.7vw;
 	/* background-color: #e5e4e3; */
-	position: fixed;
+	position: absolute;
 	margin-right: 3vw;
 	z-index: 3;
 	margin-top: 1vw;
@@ -674,7 +676,7 @@ main {
 /* page 3 */
 
 .page3 {
-	height: 111vw;
+	height: 131vw;
 	width: 100%;
 	/* background-color: red; */
 	padding: 0vw 1vw;
@@ -709,7 +711,7 @@ main {
 }
 
 .wrapper {
-	height: 73%;
+	height: 63%;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -1046,6 +1048,10 @@ main {
 	flex-direction: column;
 	color: #e5e4e3;
 	margin-top: 21vw;
+	position: fixed;
+	z-index: 9;
+	overflow: hidden;
+	bottom: 0;
 }
 
 .text-content4 {
@@ -1294,6 +1300,15 @@ a {
 }
 
 .footer-mobile {
+	display: none;
+}
+
+.footer-wrapper {
+	height: 100vw;
+	width: 100%;
+}
+
+.footer-wrapper-mobile {
 	display: none;
 }
 
@@ -2231,18 +2246,6 @@ html::-webkit-scrollbar-thumb {
 
 	/* Page 4 (Footer) */
 
-	.footer {
-		height: 51vw;
-		width: 99%;
-		background-color: #17191b;
-		margin-left: 0.5vw;
-		margin-right: auto;
-		display: flex;
-		flex-direction: column;
-		color: #e5e4e3;
-		margin-top: 21vw;
-	}
-
 	.text-content4 {
 		padding: 1vw 2vw;
 		display: flex;
@@ -2505,6 +2508,10 @@ html::-webkit-scrollbar-thumb {
 		flex-direction: column;
 		color: #e5e4e3;
 		margin-top: 11vw;
+		position: fixed;
+		z-index: 9;
+		overflow: hidden;
+		bottom: 0;
 	}
 
 	.mail-input-mobile {
@@ -2649,5 +2656,21 @@ html::-webkit-scrollbar-thumb {
 
 	.bottom-end-mobile p {
 		padding-top: 1vw;
+	}
+
+	main {
+		background-color: #e4e1d9;
+		position: relative;
+		z-index: 10;
+	}
+
+	.footer-wrapper-mobile {
+		height: 100vw;
+		width: 100%;
+		display: block;
+	}
+
+	.footer-wrapper {
+		display: none;
 	}
 }

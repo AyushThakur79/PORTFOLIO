@@ -1,8 +1,24 @@
-const scroll = new LocomotiveScroll({
-	el: document.querySelector("main"),
-	smooth: true,
+// const scroll = new LocomotiveScroll({
+// 	el: document.querySelector("main"),
+// 	smooth: true,
+// });
+
+//  lenis for smmoth scrolling
+
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+	console.log(e);
 });
 
+function raf(time) {
+	lenis.raf(time);
+	requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+// ends
 // AOS.init();
 
 window.onload = function () {
