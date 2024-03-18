@@ -558,7 +558,7 @@ main {
 /* Page 2 */
 
 .page2 {
-	height: 83vw;
+	height: 85vw;
 	width: 99%;
 	background-color: #17191b;
 	margin-left: auto;
@@ -647,6 +647,7 @@ main {
 	justify-content: flex-end;
 	margin-right: 5.3vw;
 	gap: 2.3vw;
+	margin-top: 5vw;
 }
 
 .tech-icons img {
@@ -676,11 +677,11 @@ main {
 /* page 3 */
 
 .page3 {
-	height: 131vw;
+	height: 135vw;
 	width: 100%;
 	/* background-color: red; */
 	padding: 0vw 1vw;
-	padding-top: 9vw;
+	padding-top: 19vw;
 }
 
 .headline {
@@ -1758,7 +1759,7 @@ html::-webkit-scrollbar-thumb {
 	/* Page 2 */
 
 	.page2 {
-		height: 116vw;
+		height: 121vw;
 		width: 99%;
 		background-color: #17191b;
 		margin-left: auto;
@@ -1797,6 +1798,7 @@ html::-webkit-scrollbar-thumb {
 		font-family: nb;
 		color: #a29e9a;
 		margin: 4vw 2vw;
+		font-size: 4.7vw;
 	}
 
 	.main-text h1:nth-child(1) {
@@ -1804,6 +1806,10 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.main-text h1:nth-child(2) {
+		font-size: 4.7vw;
+	}
+
+	.main-text h1 {
 		font-size: 4.7vw;
 	}
 
@@ -1831,6 +1837,11 @@ html::-webkit-scrollbar-thumb {
 	}
 
 	.main-text2 h1:nth-child(2) {
+		font-size: 4.7vw;
+	}
+
+	.main-text2 h1:nth-child(1) {
+		margin-left: 4vw;
 		font-size: 4.7vw;
 	}
 
