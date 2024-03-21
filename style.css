@@ -269,7 +269,7 @@ main {
 .left h4:nth-child(2)::after {
 	content: "";
 	background: #e5e4e3;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -283,7 +283,7 @@ main {
 .left h4:nth-child(3)::after {
 	content: "";
 	background: #e5e4e3;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -330,46 +330,6 @@ main {
 	border-radius: 2px;
 	right: 0%;
 }
-
-/* nav icon 2  */
-
-/* .right2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 2.3vw;
-	width: 4.3vw;
-	margin-right: 3vw;
-	position: fixed;
-	z-index: 999;
-	right: 0%;
-	top: 0;
-	transition: all 0.9s ease-in-out;
-} */
-
-/* .right2 .lines1 {
-	height: 0.1vw;
-	width: 3.7vw;
-	position: fixed;
-	margin-right: 3vw;
-	background-color: #e5e4e3;
-	border-radius: 2px;
-	right: 0%;
-	z-index: 999;
-	position: fixed;
-} */
-
-/* .right2 .lines2 {
-	height: 0.1vw;
-	width: 3.7vw;
-	z-index: 999;
-	position: fixed;
-	margin-right: 3vw;
-	margin-top: 1vw;
-	background-color: #e5e4e3;
-	border-radius: 2px;
-	right: 0%;
-} */
 
 /* Page 1  */
 
@@ -805,7 +765,7 @@ main {
 .forth-phase p::after {
 	content: "";
 	background: #222222;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -1070,7 +1030,7 @@ main {
 .text-content4 h1::after {
 	content: "";
 	background: #e5e4e3;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -1160,7 +1120,7 @@ main {
 .linkedin h5 a::after {
 	content: "";
 	background: #e5e4e3;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -1176,7 +1136,7 @@ main {
 .github h5 a::after {
 	content: "";
 	background: #e5e4e3;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -1192,7 +1152,7 @@ main {
 .insta h5 a::after {
 	content: "";
 	background: #e5e4e3;
-	height: 0.1vw;
+	height: 0.1vh;
 	width: 0%;
 	display: block;
 	margin: auto;
@@ -1359,7 +1319,7 @@ html::-webkit-scrollbar-thumb {
 
 /* Responsive - For Mobile*/
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 	.loader {
 		height: 100%;
 		width: 100%;

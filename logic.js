@@ -123,28 +123,31 @@ const topScrollLink = document.querySelector("#topScroll");
 // Scroll to the About section
 aboutLink.addEventListener("click", function (event) {
 	event.preventDefault();
-	scroll.scrollTo("#about");
+	const aboutSection = document.querySelector("#about");
+	aboutSection.scrollIntoView({ behavior: "smooth" });
 	menu.style.right = "-100%";
 });
 
 // Scroll to the Work section
 workLink.addEventListener("click", function (event) {
 	event.preventDefault();
-	scroll.scrollTo("#work");
+	const workSection = document.querySelector("#work");
+	workSection.scrollIntoView({ behavior: "smooth" });
 	menu.style.right = "-100%";
 });
 
-// Scroll to the Work section
+// Scroll to the Reach Out section
 reachout.addEventListener("click", function (event) {
 	event.preventDefault();
-	scroll.scrollTo("#reach");
+	const reachSection = document.querySelector("#reach");
+	reachSection.scrollIntoView({ behavior: "smooth" });
 	menu.style.right = "-100%";
 });
 
 // Scroll to the Top
 topScrollLink.addEventListener("click", function (event) {
 	event.preventDefault();
-	scroll.scrollTo("top");
+	window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 // Alert
@@ -156,3 +159,28 @@ function submitForm(event) {
 		alert("Thank you for your submission!");
 	}, 1000);
 }
+
+// hide cursor
+const cursor = document.querySelector(".cursor");
+
+function hideCursor() {
+	cursor.style.display = "none";
+}
+
+function showCursor() {
+	cursor.style.display = "block";
+}
+
+if (window.innerWidth < 768) {
+	hideCursor();
+} else {
+	showCursor();
+}
+
+window.addEventListener("resize", function () {
+	if (window.innerWidth < 768) {
+		hideCursor();
+	} else {
+		showCursor();
+	}
+});
