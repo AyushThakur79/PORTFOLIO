@@ -106,6 +106,7 @@ reach.addEventListener("mouseenter", function () {
 	crsr.style.borderRadius = "50%";
 	crsr.style.transition = "all 0.2s ease";
 });
+z;
 
 reach.addEventListener("mouseleave", function () {
 	crsr.style.height = "7px";
