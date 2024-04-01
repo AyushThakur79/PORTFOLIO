@@ -151,7 +151,6 @@ topScrollLink.addEventListener("click", function (event) {
 });
 
 // Alert
-
 function submitForm(event) {
 	event.preventDefault();
 
@@ -184,3 +183,18 @@ window.addEventListener("resize", function () {
 		showCursor();
 	}
 });
+
+// time
+let time = document.querySelector("#time");
+let date = new Date();
+time.textContent = date.toLocaleTimeString();
+
+setInterval(() => {
+	let date = new Date();
+	time.textContent = `${date.toLocaleTimeString()}`;
+}, 1000);
+
+// Version
+let version = document.querySelector("#version");
+let year = new Date();
+version.textContent = `${year.getFullYear()} © Edition`;
