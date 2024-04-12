@@ -198,3 +198,30 @@ setInterval(() => {
 let version = document.querySelector("#version");
 let year = new Date();
 version.textContent = `${year.getFullYear()} © Edition`;
+
+// Rolling Text Effect
+
+let rolling = document.querySelectorAll(".text-rolling");
+rolling.forEach((element) => {
+	let innerText = element.innerText;
+	element.innerHTML = "";
+
+	let textContainer = document.createElement("div");
+	textContainer.classList.add("block");
+
+	for (let letter of innerText) {
+		let span = document.createElement("span");
+		span.innerText = letter.trim() === "" ? "\xa0" : letter;
+		span.classList.add("letter");
+		textContainer.appendChild(span);
+	}
+
+	element.appendChild(textContainer);
+	element.appendChild(textContainer.cloneNode(true));
+});
+
+rolling.forEach((element) => {
+	element.addEventListener("mousemove", () => {
+		element.classList.remove("play");
+	});
+});

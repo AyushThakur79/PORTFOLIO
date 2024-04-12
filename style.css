@@ -290,6 +290,10 @@ main {
 	width: 97%;
 }
 
+.left a:nth-child(1).text-rolling {
+	width: 11%;
+}
+
 .left a:nth-child(3)::after {
 	content: "";
 	background: #e5e4e3;
@@ -1397,6 +1401,31 @@ html::-webkit-scrollbar-thumb {
 }
 .letter:nth-child(13) {
 	transition-delay: 0.18s;
+}
+
+.left a:nth-child(3) .block .letter:nth-child(14) {
+	transition-delay: 0.195s;
+}
+.left a:nth-child(3) .block .letter:nth-child(15) {
+	transition-delay: 0.21s;
+}
+.left a:nth-child(3) .block .letter:nth-child(16) {
+	transition-delay: 0.225s;
+}
+.left a:nth-child(3) .block .letter:nth-child(17) {
+	transition-delay: 0.24s;
+}
+.left a:nth-child(3) .block .letter:nth-child(18) {
+	transition-delay: 0.255s;
+}
+.left a:nth-child(3) .block .letter:nth-child(19) {
+	transition-delay: 0.27s;
+}
+.left a:nth-child(3) .block .letter:nth-child(20) {
+	transition-delay: 0.285s;
+}
+.left a:nth-child(3) .block .letter:nth-child(21) {
+	transition-delay: 0.3s;
 }
 
 /* Responsive - For Mobile*/
