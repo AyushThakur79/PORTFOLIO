@@ -57,6 +57,7 @@ body {
 
 a {
 	cursor: none;
+	text-decoration: none;
 }
 
 main {
@@ -240,33 +241,42 @@ main {
 
 .box .left {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	gap: 11vw;
+	gap: 6vw;
 	margin-left: 1vw;
 	font-family: "Helvetica", sans-serif;
 	color: #e5e4e3;
 	font-size: 0.9vw;
+	width: 70%;
 }
 
-.left h4 a {
+.left a {
 	text-decoration: none;
 	color: #e5e4e3;
 }
 
-.left h4:nth-child(1) {
+.left a:nth-child(1) {
 	font-family: nuckle;
 }
 
-.left h4:nth-child(3) {
+.left a:nth-child(2) {
 	font-family: nuckle;
 }
 
-.left h4:nth-child(3) span {
+.left a:nth-child(3) {
+	font-family: nuckle;
+	width: 16%;
+}
+
+.left a:nth-child(2) span {
 	font-family: "Helvetica", sans-serif;
 }
 
-.left h4:nth-child(2)::after {
+.left a:nth-child(3) span {
+	font-family: "Helvetica", sans-serif;
+}
+
+.left a:nth-child(2)::after {
 	content: "";
 	background: #e5e4e3;
 	height: 0.1vh;
@@ -276,11 +286,11 @@ main {
 	transition: all 0.4s ease;
 }
 
-.left h4:nth-child(2):hover::after {
+.left a:nth-child(2):hover::after {
 	width: 97%;
 }
 
-.left h4:nth-child(3)::after {
+.left a:nth-child(3)::after {
 	content: "";
 	background: #e5e4e3;
 	height: 0.1vh;
@@ -290,7 +300,7 @@ main {
 	transition: all 0.4s ease;
 }
 
-.left h4:nth-child(3):hover::after {
+.left a:nth-child(3):hover::after {
 	width: 97%;
 }
 
@@ -753,13 +763,14 @@ main {
 	font-family: nb;
 }
 
-.forth-phase p {
-	font-size: 1.1vw;
+.forth-phase .text-rolling .block:last-child {
+	color: #17191b;
 }
 
-.forth-phase p a {
+.forth-phase a {
+	font-size: 1.1vw;
+	color: #17191b;
 	text-decoration: none;
-	color: #222222;
 }
 
 .forth-phase p::after {
@@ -1317,9 +1328,95 @@ html::-webkit-scrollbar-thumb {
 	border-radius: 1vw;
 }
 
+/* Text Rolling Effect */
+
+.text-rolling {
+	display: inline-block;
+	overflow: hidden;
+	font-size: 0.9vw;
+	text-decoration: none;
+	color: #e5e4e3;
+	line-height: 43px;
+	height: 2.7vw;
+	width: 16%;
+}
+
+.text-rolling:hover .letter,
+.text-rolling.play .letter {
+	transform: translateY(-100%);
+}
+
+.text-rolling .block:last-child {
+	color: #e5e4e3;
+}
+
+.text-rolling .block {
+	width: 100%;
+}
+
+.text-rolling .letter {
+	display: inline-block;
+	transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.letter:nth-child(1) {
+	transition-delay: 0s;
+}
+.letter:nth-child(2) {
+	transition-delay: 0.015s;
+}
+.letter:nth-child(3) {
+	transition-delay: 0.03s;
+}
+.letter:nth-child(4) {
+	transition-delay: 0.045s;
+}
+.letter:nth-child(5) {
+	transition-delay: 0.06s;
+}
+.letter:nth-child(6) {
+	transition-delay: 0.075s;
+}
+.letter:nth-child(7) {
+	transition-delay: 0.09s;
+}
+.letter:nth-child(8) {
+	transition-delay: 0.105s;
+}
+.letter:nth-child(9) {
+	transition-delay: 0.12s;
+}
+.letter:nth-child(10) {
+	transition-delay: 0.135s;
+}
+.letter:nth-child(11) {
+	transition-delay: 0.15s;
+}
+.letter:nth-child(12) {
+	transition-delay: 0.165s;
+}
+.letter:nth-child(13) {
+	transition-delay: 0.18s;
+}
+
 /* Responsive - For Mobile*/
 
 @media (max-width: 768px) {
+	.text-rolling {
+		white-space: nowrap;
+		overflow-x: auto;
+		animation: none;
+		color: #e4e1d9;
+		height: 9.7vw;
+		width: 56%;
+		font-size: 1.9vw;
+	}
+
+	.text-rolling.letter {
+		display: inline-block;
+		transform: none;
+		color: #e4e1d9;
+	}
 	.loader {
 		height: 100%;
 		width: 100%;
@@ -1470,31 +1567,37 @@ html::-webkit-scrollbar-thumb {
 
 	.box .left {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		gap: 11vw;
+		gap: 0vw;
 		margin-left: 1vw;
 		font-family: "Helvetica", sans-serif;
 		color: #e5e4e3;
 		font-size: 1.9vw;
 	}
 
-	.left h4 a {
+	.left a {
 		text-decoration: none;
 		color: #e5e4e3;
 	}
 
-	.left h4:nth-child(1) {
+	.left a:nth-child(1) {
 		font-family: nuckle;
 		padding-bottom: 0.4vw;
 	}
 
-	.left h4:nth-child(3) {
+	.left a:nth-child(1) {
 		font-family: nuckle;
 		padding-bottom: 0.4vw;
+		margin-left: 1vw;
 	}
 
-	.left h4:nth-child(3) span {
+	.left a:nth-child(3) {
+		font-family: nuckle;
+		padding-bottom: 0.4vw;
+		width: 61%;
+	}
+
+	.left a:nth-child(3) span {
 		font-family: "Helvetica", sans-serif;
 	}
 
@@ -1956,34 +2059,22 @@ html::-webkit-scrollbar-thumb {
 	/* ends */
 
 	.forth-phase {
-		margin-top: -1vw;
+		margin-top: 1vw;
 		display: flex;
 		font-family: nb;
 		margin-right: 77%;
 	}
 
-	.forth-phase p {
+	.forth-phase a {
 		font-size: 3.7vw;
 		font-weight: bold;
-	}
-
-	.forth-phase p a {
 		text-decoration: none;
 		color: #222222;
 	}
 
-	.forth-phase p::after {
-		content: "";
-		background: #222222;
-		height: 0.1vw;
-		width: 0%;
-		display: block;
-		margin: auto;
-		transition: all 0.4s ease;
-	}
-
-	.forth-phase p:hover::after {
-		width: 95%;
+	.forth-phase .text-rolling {
+		font-size: 3.3vw;
+		width: 90%;
 	}
 
 	/* fifth phase */
@@ -2619,14 +2710,10 @@ html::-webkit-scrollbar-thumb {
 		font-family: nb;
 		font-size: 2.7vw;
 		padding-left: 3.7vw;
-		padding-top: 1vw;
+		padding-top: 4vw;
 		display: flex;
 		justify-content: space-between;
-		padding-right: 3vw;
-	}
-
-	.bottom-end-mobile p {
-		padding-top: 1vw;
+		padding-right: 4vw;
 	}
 
 	main {
