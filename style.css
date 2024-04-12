@@ -137,18 +137,12 @@ main {
 	/* justify-content: center; */
 	/* align-items: center; */
 	transform: translate(0, 0) rotate(0.001deg);
-	transition: all 0.9s cubic-bezier(0.78, 0.02, 0.15, 0.99);
-	will-change: transform;
+	transition: all 0.5s ease-in-out;
 	font-family: nb;
 	padding: 1.9vw 7.7vw;
 	/* border-top-left-radius: 1vw;
 	border-bottom-left-radius: 1vw; */
 }
-
-.cross {
-	transition: all 0.9s ease-in-out;
-}
-
 .menu span {
 	/* background-color: red; */
 	display: flex;
@@ -1040,6 +1034,7 @@ main {
 	color: #e5e4e3;
 	font-family: darkF;
 	font-size: 22vw;
+	user-select: none;
 }
 
 .text-content4 h1::after {
@@ -2347,6 +2342,7 @@ html::-webkit-scrollbar-thumb {
 		color: #e5e4e3;
 		font-family: darkF;
 		font-size: 22vw;
+		user-select: none;
 	}
 
 	.text-content4 h1::after {
