@@ -349,7 +349,7 @@ main {
 }
 
 .page1 h1 {
-	font-size: 8.9vw;
+	font-size: 10.4vw;
 	padding: 0 1vw;
 	font-family: "Righteous", sans-serif;
 	font-weight: 400;
@@ -357,6 +357,8 @@ main {
 	color: #222222;
 	position: relative;
 	z-index: 3;
+	text-align: center;
+	margin-bottom: 1vw;
 }
 
 .page1 h1 span img {
@@ -368,7 +370,6 @@ main {
 .page1 h1 img:nth-child(2) {
 	display: none;
 }
-
 @keyframes moving-icon {
 	from {
 		transform: rotate(0deg);
@@ -531,12 +532,20 @@ main {
 	background-color: #17191b;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 #about {
 	cursor: none;
 }
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: transparent;
+	z-index: 100;
+}
 /* text1 */
 
 .text1 {
@@ -1307,7 +1316,7 @@ a {
 	background-color: #e5e4e3;
 	border-radius: 50%;
 	position: fixed;
-	z-index: 99;
+	z-index: 89;
 	mix-blend-mode: difference;
 }
 

@@ -85,18 +85,20 @@ var about = document.querySelector(".page2");
 var reach = document.querySelector(".text-content4");
 
 // For Whole About Section
-about.addEventListener("mouseenter", function () {
-	crsr.style.height = "97px";
-	crsr.style.width = "97px";
-	crsr.style.borderRadius = "50%";
-	crsr.style.transition = "all 0.2s ease";
+about.addEventListener("mouseover", function () {
+	gsap.to(crsr, {
+		scale: 9,
+		duration: 0.2,
+		ease: "power1.out",
+	});
 });
 
 about.addEventListener("mouseleave", function () {
-	crsr.style.height = "7px";
-	crsr.style.width = "7px";
-	crsr.style.borderRadius = "50%";
-	crsr.style.transition = "all 0.2s ease";
+	gsap.to(crsr, {
+		scale: 1,
+		duration: 0.2,
+		ease: "power1.out",
+	});
 });
 
 // For Reach Out Headine
